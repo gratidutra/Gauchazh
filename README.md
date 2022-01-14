@@ -1,7 +1,7 @@
 New clients probability
 ==============================
 
-## Passa-a-passo para utilização
+## Passo-a-passo para utilização
 
 - Clone o repositório
 
@@ -25,7 +25,7 @@ New clients probability
 
 ## Notebooks 
 
-No diretório src/notebooks existem 3 notebooks:
+No diretório ```src/notebooks``` existem 3 notebooks:
 
 **exploratory_analysis** - é onde se encontram as análises exploratórias
 

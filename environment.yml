@@ -1,0 +1,11 @@
+name: new-clients-probability
+channels:
+    - conda-forge
+    - anaconda
+dependencies:
+    - python=3
+    - ipykernel
+    - jupyter
+    - pip
+    - pip:
+        - -r requirements.txt

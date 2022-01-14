@@ -5,11 +5,11 @@ New clients probability
 
 - Clone o repositório
 
-- Direcione-se ao diretório clonado e execute o comando com ```make create_environmente```
+- Direcione-se ao diretório clonado e execute o comando ```make create_environmente```
 
 - Ative o ambiente com ```conda activate new-clientes-probability```
 
-- Dentro do diretório ``data/raw_data`` estão as tabelas cruas 
+- Dentro do diretório ``data/raw_data`` estão as tabelas cruas. Porém esta pasta não se encontra no repositório para evitar excesso de memória, por isso ao clonar o repositório crie a pasta ``data`` e dentro dela duas outras pastas ``raw`` e ``processed`` 
 
 - Todos os scripts estão presentes no diretório ``src``. Nesse template são possíveis executar os seguintes comandos:
 
@@ -19,7 +19,7 @@ New clients probability
 
 - ```make train``` - cria o modelo, separa os dados em treino e teste e salva o modelo na pasta ``models``
 
-- ```make predict``` - local onde o modelo é avaliado com os dados de treino e salva em ``outputs/data`` a probabilidade de cada usuário ser visitante ou prospect 
+- ```make predict``` - local onde o modelo é avaliado com os dados de treino e salva em ``outputs/data`` a probabilidade de cada usuário ser assinante ou prospect 
 
 --------------
 

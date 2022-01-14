@@ -36,8 +36,6 @@ model.fit(X_train, y_train)
 
 pickle = pickle.dump(model, open(sys.argv[2] + '/mncp.pkl', 'wb'))
 
-#model.save_model(sys.argv[2] +'mncp.pkl')
-
 # dados de teste
 
 X_test.to_csv(sys.argv[1] + '/X_test.csv', index=False)

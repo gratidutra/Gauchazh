@@ -39,16 +39,16 @@ print('f1:      ', f1)
 
 X_test_pred_prob_df = pd.DataFrame(model.predict_proba(X_test))
 
-predict_prospect = pd.DataFrame()
-predict_prospect['PROB_PROSPECT'] = X_test_pred_prob_df[0]*100
-predict_prospect['PROB_ASSINANTE'] = X_test_pred_prob_df[1]*100
-predict_prospect["PERFIL"] = y_test['PERFIL']
-predict_prospect = pd.merge(predict_prospect, X_test, left_index=True, right_index=True)
+df_predict = pd.DataFrame()
+df_predict['PROB_PROSPECT'] = X_test_pred_prob_df[0]*100
+df_predict['PROB_ASSINANTE'] = X_test_pred_prob_df[1]*100
+df_predict["PERFIL"] = y_test['PERFIL']
+df_predict = pd.merge(df_predict, X_test, left_index=True, right_index=True)
 
-# predict_prospect = predict_prospect[predict_prospect['PERFIL'] == 0]
+# df_predict = df_predict[df_predict['PERFIL'] == 0]
 
 # Salvando a tabela de probabilidades na pasta output/data
 
-print('-----\n Predições das probabilidades dos prospects salvas em output/data \n----')
+print('-----\n Predições das probabilidades dos usuários salvas em output/data \n----')
 
-predict_prospect.to_csv(sys.argv[3] + 'data/predict_prospect.csv', index=False)
+df_predict.to_csv(sys.argv[3] + 'data/df_predict.csv', index=False)

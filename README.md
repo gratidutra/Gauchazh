@@ -19,7 +19,7 @@ New clients probability
 
 - ```make train``` - cria o modelo, separa os dados em treino e teste e salva o modelo na pasta ``models``
 
-- ```make predict``` - local onde o modelo é avaliado com os dados de treino e salva em ``outputs/data`` a probabilidade de cada usuário ser assinante ou prospect 
+- ```make predict``` - local onde o modelo é avaliado com os dados de teste e salva em ``outputs/data`` a probabilidade de cada usuário ser assinante ou prospect 
 
 --------------
 
